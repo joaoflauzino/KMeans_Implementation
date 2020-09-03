@@ -58,9 +58,11 @@ def calculate_distance_Euclidean(Centroids, m, K, X):
 
     return np.argmin(distance, axis=1)+1
 
+#Write file
 def write_file(df, outputFile):
     return df.to_csv('output/' + outputFile)
 
+#Generate results
 def generate_scatter(df, group):
     import seaborn as sns
     datasets = {"original": df.select_dtypes(exclude=['object']), "predict": group}
@@ -71,7 +73,7 @@ def generate_scatter(df, group):
             sns.lmplot(x=v.columns[0], y=v.columns[1], data=v, hue="predict", fit_reg=False, legend=False)
         plt.savefig('output/' + k + '.png')
 
-#Grouping data
+#Apply kmeans
 def main(n_iter, K, df, outputFile):
 
     columns = df.select_dtypes(exclude=['object']).columns.tolist()
