@@ -99,8 +99,6 @@ def main(n_iter, K, df, outputFile):
     generate_scatter(df, group) # Generate scatter plots
     write_file(group, outputFile) # write file
 
-    return group
-
 if __name__ == "__main__":
     
     args = get_args()
