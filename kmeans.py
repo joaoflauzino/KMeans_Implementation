@@ -1,4 +1,3 @@
-
 import numpy as np
 import random as rd
 import matplotlib.pyplot as plt
@@ -107,5 +106,3 @@ if __name__ == "__main__":
     args = get_args()
     df = pd.read_csv('dataset/' + args.inputFile, sep=args.sep, decimal=args.dec)
     main(args.n_iter, args.K, df, args.outputFile)
-
-   

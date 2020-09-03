@@ -6,12 +6,17 @@
 
     - informar os argumentos de acordo com a lista abaixo:
 
-        -inputFile - o nome do arquivo que será processado. É importante que ele não tenha espaços no nome, pois o código entenderá como um novo argumento e dará erro.
-        -sep - identificador de nova coluna
-        -dec - identificador de casa decimal
-        -outputFile - nome do arquivo que será gerado com os resultados
-        -K - numero de grupos 
-        -n_iter - numero de iterações que será realizada pelo algoritmo
+        inputFile - o nome do arquivo que será processado. É importante que ele não tenha espaços no nome, pois o código entenderá como um novo argumento e dará erro.
+        
+        sep - identificador de nova coluna
+        
+        dec - identificador de casa decimal
+        
+        outputFile - nome do arquivo que será gerado com os resultados
+        
+        K - numero de grupos 
+        
+        n_iter - numero de iterações que será realizada pelo algoritmo
 
     - exemplo de chamada do código no prompt:
         python kmeans.py -inputFile Mall_Customers.csv -sep , -dec . -outputFile results.csv -K 3
